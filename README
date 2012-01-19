@@ -1,0 +1,8 @@
+For use in IntelliJ, launch sbt, then:
+
+> update 
+> gen-idea no-classifiers no-sbt-classifiers
+
+To run using sbt:
+
+> run
