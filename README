@@ -1,3 +1,10 @@
+This is an empty Scala project, with the following dependencies already configured:
+
+* Scala 2.9.1 with continuations
+* ScalaZ
+* ScalaTest
+* SQLite ODBC driver
+
 For use in IntelliJ, launch sbt, then:
 
 > update 
