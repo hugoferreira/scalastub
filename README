@@ -10,6 +10,11 @@ For use in IntelliJ, launch sbt, then:
 > update 
 > gen-idea no-classifiers no-sbt-classifiers
 
-To run using sbt:
+And then:
+
+* Open the Intellij IDEA project and go to "Project Structure -> Modules -> Scala" and add the continuations plugin jar file in the "Compiler Plugins" pane. The jar should be in ~/.ivy2/cache/org.scala-lang.plugins/continuations/jars/continuations-2.9.1.jar .
+* Tick the "Enable Continuations" option in the "Compiler Options" pane.
+
+To run using sbt only:
 
 > run
