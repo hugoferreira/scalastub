@@ -1,9 +1,10 @@
 This is an empty Scala project, with the following dependencies already configured:
 
-* Scala 2.9.1 with continuations
-* ScalaZ
-* ScalaTest
-* SQLite ODBC driver
+* Scala 2.9.1 with continuations enabled
+* ScalaZ 6.0.3
+* Akka 1.2
+* ScalaTest 1.6.1
+* SQLite ODBC driver 3.6.16
 
 For use in IntelliJ, launch sbt, then:
 
