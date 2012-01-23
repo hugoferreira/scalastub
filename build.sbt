@@ -12,6 +12,8 @@ scalacOptions += "-P:continuations:enable"
 
 libraryDependencies += "se.scalablesolutions.akka" % "akka-actor" % "1.2"
 
+libraryDependencies += "org.scala-tools.testing" %% "scalacheck" % "1.9" % "test"
+
 libraryDependencies += "org.xerial" % "sqlite-jdbc" % "3.6.16"
 
 libraryDependencies += "org.scalaz" %% "scalaz-core" % "6.0.3"
