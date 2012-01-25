@@ -11,7 +11,7 @@ This is an empty Scala project, with the following dependencies already configur
 For use in IntelliJ, launch sbt, then:
 
 > update 
-> gen-idea no-classifiers no-sbt-classifiers
+> gen-idea no-classifiers
 
 And then:
 
