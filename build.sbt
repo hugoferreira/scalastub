@@ -10,6 +10,10 @@ addCompilerPlugin("org.scala-lang.plugins" % "continuations" % "2.9.1")
 
 scalacOptions += "-P:continuations:enable"
 
+resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+
+resolvers += "Scala Tools Snapshots" at "http://scala-tools.org/repo-snapshots/"
+
 libraryDependencies ++= Seq(
  "se.scalablesolutions.akka" % "akka-actor" % "1.2",
  "org.scala-tools.testing" %% "scalacheck" % "1.9" % "test",
