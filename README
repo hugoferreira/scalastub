@@ -6,6 +6,7 @@ This is an empty Scala project, with the following dependencies already configur
 * ScalaCheck 1.9
 * Specs2 1.7.1
 * SQLite ODBC driver 3.6.16
+* Sbt-Idea 1.0.0 (plugin for automatically generating IntelliJ project structure)
 
 For use in IntelliJ, launch sbt, then:
 
