@@ -10,14 +10,15 @@ addCompilerPlugin("org.scala-lang.plugins" % "continuations" % "2.9.1")
 
 scalacOptions += "-P:continuations:enable"
 
-resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
-
-resolvers += "Scala Tools Snapshots" at "http://scala-tools.org/repo-snapshots/"
+resolvers ++= Seq(
+ "Typesafe Repository"   at "http://repo.typesafe.com/typesafe/releases/",
+ "Scala Tools Snapshots" at "http://scala-tools.org/repo-releases"
+)
 
 libraryDependencies ++= Seq(
- "se.scalablesolutions.akka" % "akka-actor" % "1.2",
- "org.scala-tools.testing" %% "scalacheck" % "1.9" % "test",
- "org.xerial" % "sqlite-jdbc" % "3.6.16",
- "org.scalaz" %% "scalaz-core" % "6.0.3",
- "org.specs2" %% "specs2" % "1.7.1" % "test"
+ "org.scala-tools.testing"   %% "scalacheck"  % "1.9"   % "test",
+ "org.specs2"                %% "specs2"      % "1.7.1" % "test",
+ "se.scalablesolutions.akka"  % "akka-actor"  % "1.3.1",
+ "org.xerial"                 % "sqlite-jdbc" % "3.6.16",
+ "org.scalaz"                %% "scalaz-core" % "6.0.4"
 )
