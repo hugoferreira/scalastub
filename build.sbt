@@ -18,7 +18,6 @@ resolvers ++= Seq(
 libraryDependencies ++= Seq(
  "org.scala-tools.testing"   %% "scalacheck"  % "1.9"   % "test",
  "org.specs2"                %% "specs2"      % "1.8.2" % "test",
- "se.scalablesolutions.akka"  % "akka-actor"  % "1.3.1",
- "org.xerial"                 % "sqlite-jdbc" % "3.6.16",
- "org.scalaz"                %% "scalaz-core" % "6.0.4"
+ "com.typesafe.akka"  		  % "akka-actor"  % "2.0",
+ "org.scalaz"                %% "scalaz-core" % "7.0-SNAPSHOT"
 )
