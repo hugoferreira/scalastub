@@ -46,4 +46,4 @@ To continuously run tests:
 > ~test
 ```
 
-For a more potent templating solutions, see [Giter8](https://github.com/n8han/giter8)
+For a more powerful templating solutions, see [Giter8](https://github.com/n8han/giter8).
