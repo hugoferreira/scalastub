@@ -29,16 +29,6 @@ class Pinger(a: ActorRef) extends Actor {
   }
 }
 
-class Assassin(a: ActorRef, timeOut: Long) extends Actor {
-  context.setReceiveTimeout(timeOut milliseconds)
-
-  def receive = {
-    case ReceiveTimeout =>
-      println("[Assassin] Deploying PoisonPill")
-      a ! Kill
-  }
-}
-
 class Supervisor extends Actor {
   import akka.actor.SupervisorStrategy._
 
@@ -47,13 +37,15 @@ class Supervisor extends Actor {
      case _: Exception => Restart
    }
 
- val ponger   = context.actorOf(Props(new Ponger), name = "ponger")
- val pinger   = context.actorOf(Props(new Pinger(ponger)), name = "pinger")
- val assassin = context.actorOf(Props(new Assassin(ponger, 5000)), name = "assassin")
+  val ponger   = context.actorOf(Props(new Ponger), name = "ponger")
+  val pinger   = context.actorOf(Props(new Pinger(ponger)), name = "pinger")
 
- def receive = {
+  // Deploy a scheduled assassination
+  context.system.scheduler.schedule(5 seconds, 5 seconds, ponger, Kill)
+
+  def receive = {
    case _ => { }
- }
+  }
 }
 
 object Main extends App {
