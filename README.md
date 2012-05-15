@@ -9,6 +9,7 @@ This is an empty Scala project, with the following dependencies already configur
 * Specs2 1.9
 * Sbt-Idea (plugin for automatically generating IntelliJ project structure)
 * Eclipse  (plugin for automatically generating Eclipse  project structure)
+* Ensime-sbt-cmd (plugin for automatically generating Ensime project file)
 * SBT from sbt-extras (automatically fetches sbt)
 
 ### Basic usage
@@ -25,6 +26,7 @@ And then:
 > update 
 > gen-idea  (* for IntelliJ *)
 > eclipse 	(* for Eclipse  *)
+> ensime generate (* for Ensime *)
 ```
 
 To run using SBT only:
