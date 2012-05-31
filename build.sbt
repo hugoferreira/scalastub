@@ -7,8 +7,7 @@ scalaVersion := "2.9.2"
 resolvers ++= Seq(
  "snapshots"             at "http://oss.sonatype.org/content/repositories/snapshots",
  "releases"              at "http://oss.sonatype.org/content/repositories/releases",
- "Typesafe Repository"   at "http://repo.typesafe.com/typesafe/releases/",
- "Scala Tools Snapshots" at "http://scala-tools.org/repo-releases"
+ "Typesafe Repository"   at "http://repo.typesafe.com/typesafe/releases/"
 )
 
 libraryDependencies ++= Seq(

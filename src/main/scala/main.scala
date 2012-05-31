@@ -2,13 +2,15 @@ import akka.actor._
 import akka.pattern.ask
 import akka.util.Timeout
 import akka.util.duration._
+import scalaz._
+import Scalaz._
 
 final case class Ping(msg: String)
 final case class Pong(msg: String)
 
 class Ponger extends Actor {
   def receive = {
-    case Ping(msg) =>
+    case Ping(msg) ⇒
       println("[Ponger] Received Ping: " + msg)
       sender ! Pong(msg)
   }
@@ -21,7 +23,7 @@ class Pinger(a: ActorRef) extends Actor {
   context.setReceiveTimeout(1 second)
 
   def receive = {
-    case ReceiveTimeout =>
+    case ReceiveTimeout ⇒
       i += 1
       println("[Pinger] Pinging: " + i)
       a ? Ping(i.toString)
@@ -44,7 +46,7 @@ class Supervisor extends Actor {
   context.system.scheduler.schedule(5 seconds, 5 seconds, ponger, Kill)
 
   def receive = {
-   case _ => { }
+   case _ ⇒ { }
   }
 }
 
