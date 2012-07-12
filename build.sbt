@@ -1,7 +1,11 @@
+import AssemblyKeys._
+
+assemblySettings
+
 name := "Empty Project"
- 
+
 version := "0.1"
- 
+
 scalaVersion := "2.9.2"
 
 resolvers ++= Seq(
@@ -12,8 +16,10 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
- "org.scalacheck"            %% "scalacheck"  % "1.9" % "test",
- "org.specs2"                %% "specs2"      % "1.10" % "test",
- "com.typesafe.akka"  		  % "akka-actor"  % "2.0.1",
+ "org.scalacheck"            %% "scalacheck"  % "1.10.0" % "test",
+ "org.specs2"                %% "specs2"      % "1.11" % "test",
+ "com.typesafe.akka"         %  "akka-actor"  % "2.0.2",
  "org.scalaz"                %% "scalaz-core" % "7.0-SNAPSHOT"
 )
+
+seq(Revolver.settings: _*)
