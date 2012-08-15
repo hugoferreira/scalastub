@@ -3,10 +3,10 @@
 This is an empty Scala project, with the following dependencies already configured:
 
 * Scala 2.9.2
-* Akka 2.0.1
+* Akka 2.0.3
 * ScalaZ 7 (SNAPSHOT)
-* ScalaCheck 1.9
-* Specs2 1.10
+* ScalaCheck 1.10
+* Specs2 1.12
 * Sbt-Idea (plugin for automatically generating IntelliJ project structure)
 * Eclipse  (plugin for automatically generating Eclipse  project structure)
 * Ensime-sbt-cmd (plugin for automatically generating Ensime project file)
