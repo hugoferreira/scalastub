@@ -18,5 +18,5 @@ libraryDependencies ++= Seq(
  "org.scalacheck"            %% "scalacheck"  % "1.10.0" % "test",
  "org.specs2"                %% "specs2"      % "1.12" % "test",
  "com.typesafe.akka"  	      % "akka-actor"  % "2.0.3",
- "org.scalaz"                %% "scalaz-core" % "7.0-M3"
+ "org.scalaz"                %% "scalaz-core" % "7.0.0-M3"
 )
