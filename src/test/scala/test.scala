@@ -31,7 +31,7 @@ object SkiCombinators {
 class HelloWorldSpec extends Specification with ScalaCheck {
   "Summing numbers" should {
     "satisfy commutativity" ! check {
-      forAll { (i: Int, j: Int) => i + j == j + i }
+      forAll { (i: Int, j: Int) => i + j == j - i }
     }
 
     "satisfy associativity" ! check {
